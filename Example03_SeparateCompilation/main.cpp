@@ -6,8 +6,8 @@
 // use of 'using namespace std'.
 //
 
-#include "complex.h"
 #include <iostream>
+#include "complex.h"
 
 // Start of test program
 int main() {

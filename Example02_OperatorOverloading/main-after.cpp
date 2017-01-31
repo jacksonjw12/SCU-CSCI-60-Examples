@@ -39,7 +39,7 @@ int main() {
        << "z + w = " << z + w << endl
        << "z * w = " << z * w << endl;
 
-  Complex i(0,1);
+  Complex i(0, 1);
   cout << "i = " << i << endl << "i^2 = " << i * i << endl;
 
   return 0;

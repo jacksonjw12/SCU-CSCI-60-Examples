@@ -18,7 +18,7 @@
 // In this version we will use a third type parameter for the return value and
 // specify this type when we call the function.
 //
-template<typename R, typename T1, typename T2>
+template <typename R, typename T1, typename T2>
 R old_sum(T1 a, T2 b) {
   return a + b;
 }
@@ -43,10 +43,11 @@ int main() {
   std::string t = "BB";
 
   // When using old_sum we need to specify the return type
-  std::cout << old_sum<double>(x,y) << std::endl << old_sum<std::string>(s,t) << std::endl;
+  std::cout << old_sum<double>(x, y) << std::endl
+            << old_sum<std::string>(s, t) << std::endl;
 
   // When using new_sum the return type is automatically deduced
-  std::cout << new_sum(x,y) << std::endl << new_sum(s,t) << std::endl;
+  std::cout << new_sum(x, y) << std::endl << new_sum(s, t) << std::endl;
 
   return 0;
 }
